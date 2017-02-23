@@ -151,6 +151,7 @@
                 });
                 if (values.length == 1) values = values[0];
                 $select.val(values);
+                $select.trigger('change');
             }
         });
         $select.before($listGroup);
